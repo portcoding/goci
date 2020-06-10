@@ -1,0 +1,16 @@
+language: go
+go:
+  - go1.x
+cache: npm
+install:
+  - npm ci
+
+script:
+  - go test
+
+deploy:
+  provider: 
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: maser
