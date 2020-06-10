@@ -1,12 +1,12 @@
 language: go
 go:
   - go1.x
-cache: npm
-install:
-  - npm ci
+#cache: npm
+#install:
+#  - npm ci
 
 script:
-  - go test
+  - go test -v ./...
 
 deploy:
   provider: 
