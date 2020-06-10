@@ -1,0 +1,2 @@
+# goci
+ci test
